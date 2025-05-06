@@ -50,21 +50,45 @@
 ---------------------------*/
 body {
   background-color: #ffffff;
-  font-family: "SonderSans", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: #9b9b9b;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/*
+@font-face {
+  font-family: 'Poppins';
+  src: url('/assets/fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+  */
 
 @font-face {
-  font-family: "SonderSans";
-  src: local("Sonder Sans"), local("SonderSans-Regular"),
-       url("/assets/fonts/sonder.woff2") format("woff2"),
-       url("/assets/fonts/sonder.woff")  format("woff");
+  font-family: 'Poppins';
+  src: url('/assets/fonts/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*
+@font-face {
+  font-family: 'Poppins';
+  src: url('/assets/fonts/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+  */
+
+@font-face {
+  font-family: 'AxeHandel';
+  src: url('/assets/fonts/axehandel-webfont.woff2') format('woff2'),
+       url('/assets/fonts/axehandel-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  unicode-range: U+000-5FF; /* Incluye caracteres latinos */
 }
 
 
@@ -89,15 +113,6 @@ body {
   padding: 0 !important;
 }
 
-/*width: 120px;
-  height: 120px;
-  background: #fff;           /* color de fondo del cuadro */
- /* display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.2)*/
-  
 
 .preloader-logo img {
   max-width: 80px;            /* ajusta según tu logo */
@@ -124,7 +139,7 @@ body {
 
 /* override slider text */
 .slider__title, .slider h2, .heading__title {
-  font-family: "AxeHandelRegular", sans-serif;
+  font-family: 'AxeHandel', sans-serif;
   font-size: 3rem;                  
   line-height: 1.1;                 
   color: #fff !important;           
@@ -1108,9 +1123,9 @@ h4,
 h5,
 h6 {
   color: #282828;
-  font-family: "AxeHandelRegular", Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  line-height: 1.1;
+  line-height: 1.2;
   text-transform: capitalize;
   margin-bottom: 20px;
 }
@@ -1146,7 +1161,7 @@ h6 {
 }
 
 .heading__subtitle {
-  font-family: "Shadows Into Light", cursive;
+  font-family: 'AxeHandel', sans-serif;
   font-size: 30px;
   color: #48bbc8;
   display: block;
@@ -1160,6 +1175,7 @@ h6 {
 
 .heading__desc {
   margin-bottom: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 .heading__icon {
@@ -1175,7 +1191,7 @@ h6 {
 }
 
 .heading-layout2 .heading__title {
-  font-family: "Shadows Into Light", cursive;
+  font-family: 'AxeHandel', sans-serif;
   color: #c7a254;
   font-size: 30px;
   margin-bottom: 20px;
@@ -1217,7 +1233,7 @@ h6 {
 }
 
 .pagetitle__subheading {
-  font-family: "Shadows Into Light", cursive;
+  font-family: 'Poppins', sans-serif;
   font-size: 30px;
   color: #f9f9f9;
   display: block;
@@ -1258,7 +1274,7 @@ h6 {
 
 .page-title .breadcrumb-item + .breadcrumb-item::before {
   color: #ffffff;
-  font-family: FontAwesome;
+  font-family: 'Poppins', sans-serif;
   content: "\f105";
 }
 
@@ -1281,7 +1297,7 @@ h6 {
 }
 
 .page-title-layout2 .pagetitle__subheading {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 13px;
   margin-bottom: 13px;
 }
@@ -1386,7 +1402,7 @@ h6 {
     Buttons
 ----------------------*/
 .btn {
-  font-family: "AxeHandelRegular", sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-transform: capitalize;
   position: relative;
   font-size: 14px;
@@ -1656,7 +1672,7 @@ h6 {
 
 .btn-custom {
   position: relative;
-  font-family: "Shadows Into Light", cursive;
+  font-family: 'Poppins', sans-serif;
   font-size: 22px;
   padding: 5px 10px;
   background-color: #0b79a4;
@@ -1754,7 +1770,7 @@ textarea.form-control {
 }
 
 .nav-tabs .nav__link {
-  font-family: "Shadows Into Light", cursive;
+  font-family: 'Poppins', sans-serif;
   display: block;
   padding-bottom: 3px;
   margin-right: 30px;
@@ -1877,7 +1893,7 @@ textarea.form-control {
 }
 
 .pagination li a {
-  font-family: "AxeHandelRegular", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 700;
   display: block;
@@ -1964,7 +1980,7 @@ textarea.form-control {
 }
 
 .icon-list.layout8 li:before {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   counter-increment: numbers;
   content: counter(numbers) ".";
@@ -2156,7 +2172,7 @@ textarea.form-control {
 
 .navbar .dropdown-toggle:after {
   content: "\f105";
-  font-family: fontAwesome;
+  font-family: 'Poppins', sans-serif;
   border: none;
   vertical-align: middle;
   margin-left: 0;
@@ -2411,7 +2427,7 @@ textarea.form-control {
   color: #ffffff;
   font-weight: 600;
   font-size: 10px;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* module-search  */
@@ -2639,7 +2655,7 @@ textarea.form-control {
 }
 
 .cart-popup .cart-subtotal span {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1;
   font-weight: 700;
 }
@@ -3078,7 +3094,7 @@ textarea.form-control {
 
 .text-banner .banner__subtitle {
   display: block;
-  font-family: "Shadows Into Light", cursive;
+  font-family: 'Poppins', sans-serif;
   color: #ffffff;
   font-size: 27px;
   margin-bottom: 10px;
@@ -3653,7 +3669,7 @@ textarea.form-control {
 
 .slider .slide__subtitle {
   display: block;
-  font-family: "Shadows Into Light", cursive;
+  font-family: 'Poppins', sans-serif;
   font-size: 25px;
   color: #f9f9f9;
   margin-bottom: 16px;
@@ -4050,7 +4066,7 @@ textarea.form-control {
 
 .portfolio-item .portfolio__cat a {
   position: relative;
-  font-family: "Shadows Into Light", cursive;
+  font-family: 'Poppins', sans-serif;
   font-size: 13px;
   font-style: italic;
   color: #333333;
@@ -4128,7 +4144,7 @@ textarea.form-control {
 
 .portfolio-filter li a {
   position: relative;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #282828;
   font-size: 14px;
   font-weight: 600;
@@ -4231,7 +4247,7 @@ textarea.form-control {
 }
 
 .portfolio__meta-list li {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 13px;
   font-weight: 700;
   color: #9e9e9e;
@@ -4265,7 +4281,7 @@ textarea.form-control {
 }
 
 .portfolio__share .portfolio__share-title {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 13px;
   font-weight: 700;
   color: #282828;
@@ -4346,7 +4362,7 @@ textarea.form-control {
 }
 
 .portfolio__nav .portfolio__nav-content span {
-  font-family: "Shadows Into Light", cursive;
+  font-family: 'Poppins', sans-serif;
   font-size: 13px;
   color: #b8b8b8;
   display: block;
@@ -4775,7 +4791,7 @@ textarea.form-control {
 }
 
 .testimonials-layout2 .testimonial-item .testimonial__desc {
-  font-family: "Shadows Into Light", cursive;
+  font-family: 'Poppins', sans-serif;
   color: #282828;
   font-size: 25px;
   line-height: 34px;
@@ -4870,7 +4886,7 @@ textarea.form-control {
     Clients
 -----------------------*/
 .clients .heading__title {
-  font-family: "Shadows Into Light", cursive;
+  font-family: 'Poppins', sans-serif;
   font-size: 24px;
 }
 
@@ -5708,7 +5724,7 @@ textarea.form-control {
 
 .filter-option-view span,
 .sort-box span {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #282828;
   font-size: 14px;
   font-weight: 700;
@@ -6285,7 +6301,7 @@ textarea.form-control {
 }
 
 .widget-poducts .widget-product-item .widget__product-price {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 13px;
   font-weight: 600;
   color: #c7a254;
@@ -6499,7 +6515,7 @@ textarea.form-control {
 }
 
 .menu__block-title {
-  font-family: "Shadows Into Light", cursive;
+  font-family: 'Poppins', sans-serif;
   font-size: 30px;
   text-align: center;
   margin-bottom: 30px;
