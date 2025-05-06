@@ -29,6 +29,7 @@
 
     <header id="header" class="header header-transparent header-layout1">
       <nav class="navbar navbar-expand-lg sticky-navbar">
+
         <div class="container">
           <a class="navbar-brand" href="index.html">
             <!-- =========================LOGO-WHITE=========================== -->
@@ -100,40 +101,112 @@
 
     <!-- ============================ Slider ============================== -->
     <section id="slider" class="slider slider-layout1">
-      <div class="carousel owl-carousel carousel-arrows" data-slide="1" data-slide-md="1" data-slide-sm="1"
-        data-autoplay="true" data-nav="true" data-dots="false" data-space="0" data-loop="true" data-speed="3000"
-        data-transition="fade" data-animate-out="fadeOut" data-animate-in="fadeIn">
-        <div class="slide-item align-v-h text-center bg-overlay">
-          <div class="bg-img"><img src="assets/images/backgrounds/slider1.png" alt="slide img"></div>
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12 col-md-12 col-lg-12">
-                <div class="slide__content">
-                  <span class="slide__subtitle">Cariño de la Casa</span>
-                  <h2 class="slide__title">Frito Dominguero &amp; Seco de Cabrito</h2>
-                  <p class="slide__desc"> Combo clÁsico piurano con malarrabia y chifle. ¡AquÍ nomÁs!</p>
-                  <a href="menu-gallery.html" class="btn btn__white btn__bordered my-1">Ver Carta</a>
-                </div><!-- /.slide-content -->
-              </div><!-- /.col-lg-12 -->
-            </div><!-- /.row -->
-          </div><!-- /.container -->
-        </div><!-- /.slide-item -->
-        <div class="slide-item align-v-h text-center bg-overlay bg-overlay-2">
-          <div class="bg-img"><img src="assets/images/backgrounds/slider2-2.png" alt="slide img"></div>
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12 col-md-12 col-lg-12">
-                <div class="slide__content">
-                  <span class="slide__subtitle">Platos Estrella</span>
-                  <h2 class="slide__title">Arroz con Pato • Ceviche Mixto • Tamal Verde!</h2>
-                  <p class="slide__desc"> Los sabores mÁs representativos de Piura en un solo lugar.</p>
-                  <a href="menu-gallery.html" class="btn btn__primary mx-2 my-1">Mira la Carta</a>
-                  <a href="reservation.html" class="btn btn__white mx-2 my-1">Amarra tu Mesa</a>
-                </div><!-- /.slide-content -->
-              </div><!-- /.col-lg-12 -->
-            </div><!-- /.row -->
-          </div><!-- /.container -->
-        </div><!-- /.slide-item -->
+      <div class="carousel owl-carousel carousel-arrows"
+           data-slide="1" data-slide-md="1" data-slide-sm="1"
+           data-autoplay="true" data-nav="true" data-dots="false"
+           data-space="0" data-loop="true" data-speed="3000"
+           data-transition="fade" data-animate-out="fadeOut"
+           data-animate-in="fadeIn">
+    
+        <!-- Slide 1: Frito Dominguero -->
+        <div class="slide-item align-v-h text-center"
+             style="position: relative; height: 100vh; overflow: hidden;">
+    
+            <!-- Overlay semitransparente -->
+      <div style="
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.35);
+        z-index: 1;">
+      </div>
+    
+         <!--En lugar de esto:-->
+  <div class="bg-img" style="position: absolute; inset: 0; overflow: hidden;">
+    <img src="assets/images/backgrounds/slid1.png"
+         alt="Frito Dominguero"
+         style="width: 100%; height: 100%; object-fit: cover;">
+  </div>
+    
+          <!-- Contenido -->
+          <div class="container" style="
+            position: relative;
+            z-index: 2;
+            padding-top: 100px;">
+            <h2 style="
+              font-size: 3rem;
+              font-weight: 700;
+              color: #ffffff;
+              margin-bottom: 0.5rem;
+              line-height: 1.2;">
+              Frito Dominguero
+            </h2>
+            <p style="
+              font-size: 1rem;
+              font-weight: 400;
+              color: #f0f0f0;
+              margin-bottom: 1.5rem;">
+              El clásico sabor piurano.
+            </p>
+            <a href="menu-gallery.html"
+            class="btn btn__primary my-1">
+              Ver Carta
+            </a>
+          </div>
+        </div>
+    
+        <!-- Slide 2: Seco de Cabrito -->
+        <div class="slide-item align-v-h text-center"
+             style="position: relative; height: 100vh; overflow: hidden;">
+    
+           <!-- Mismo overlay -->
+      <div style="
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.35);
+      z-index: 1;">
+    </div>
+    
+          <!-- Imagen de fondo -->
+          <div class="bg-img" style="
+          position: absolute;
+          inset: 0;
+          overflow: hidden;">
+            <img src="assets/images/backgrounds/slid14.png"
+                 alt="Seco de Cabrito"
+                 style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+    
+          <!-- Contenido -->
+          <div class="container" style="
+            position: relative;
+            z-index: 2;
+            padding-top: 100px;">
+            <h2 style="
+              font-size: 3rem;
+              font-weight: 700;
+              color: #ffffff;
+              margin-bottom: 0.5rem;
+              line-height: 1.2;">
+              Seco de Cabrito
+            </h2>
+            <p style="
+              font-size: 1rem;
+              font-weight: 400;
+              color: #f0f0f0;
+              margin-bottom: 1.5rem;">
+              Tiernito y jugoso, con cariño de la casa.
+            </p>
+            <a href="menu-gallery.html"
+            class="btn btn__primary mx-2 my-1">
+              Ver Carta
+            </a>
+            <a href="reservation.html"
+            class="btn btn__white   mx-2 my-1">
+              Reserva
+            </a>
+          </div>
+        </div>
+
       </div><!-- /.carousel -->
       <svg class="slider__divider-shape" xmlns="http://www.w3.org/2000/svg" width="22" height="61" viewBox="0 0 22 61">
         <path
@@ -224,7 +297,8 @@
               style="
                 display: flex !important;
                 justify-content: space-evenly !important;
-                width: 100%      !important;
+                width: 80%      !important;
+                margin-left: 5% !important;
               ">
                 <a class="nav__link active" data-toggle="tab" href="#tab1">Desayunos</a>
                 <a class="nav__link" data-toggle="tab" href="#tab2">Almuerzos</a>
